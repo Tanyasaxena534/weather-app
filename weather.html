@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="we.css">
+</head>
+
+<body>
+
+    <div class="weather-container">
+
+        <h1>🌤️ Weather App</h1>
+        <p class="subtitle">Check the current weather of any location</p>
+
+        <div class="search-box">
+            <input 
+                type="text" 
+                id="locationInput" 
+                placeholder="Enter city name..."
+            >
+
+            <button id="searchBtn">
+                Get Weather
+            </button>
+        </div>
+
+        <p id="errorMessage"></p>
+
+        <div class="weather-card" id="weatherCard">
+
+            <h2 id="location">London</h2>
+
+            <div class="weather-main">
+
+                <img id="weatherIcon" src="" alt="Weather Icon">
+
+                <div>
+                    <div class="temperature">
+                        <span id="temperature">--</span>°C
+                    </div>
+
+                    <p id="condition">--</p>
+                </div>
+
+            </div>
+
+            <div class="weather-details">
+
+                <div class="detail">
+                    <span>💧</span>
+                    <p>Humidity</p>
+                    <strong id="humidity">--%</strong>
+                </div>
+
+                <div class="detail">
+                    <span>💨</span>
+                    <p>Wind</p>
+                    <strong id="wind">-- km/h</strong>
+                </div>
+
+                <div class="detail">
+                    <span>🌡️</span>
+                    <p>Feels Like</p>
+                    <strong id="feelsLike">--°C</strong>
+                </div>
+
+            </div>
+
+            <p class="updated" id="updated">
+                Search for a location to see its weather.
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="we.js"></script>
+
+</body>
+</html>
